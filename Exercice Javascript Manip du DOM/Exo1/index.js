@@ -9,15 +9,25 @@
     }
 // 3.
     const refrain = document.getElementsByClassName('refrain');  
-/*  for (let i = 0; i < refrain.length; i++) {        
+ for (let i = 0; i < refrain.length; i++) {        
     const phrases = [... new Set(refrain[i].textContent.split('\n'))];     
     refrain[i].innerHTML='';     
     for (let j = 0; j < phrases.length; j++) {         
-        refrain[i].innerHTML+= `${phrases[j]} <br>`;     
+        refrain[i].innerHTML+= `${phrases[j]} <br>`;
     } 
-} */
-    console.log(refrain[0].textContent);
+    refrain[i].firstElementChild.remove();
+    refrain[i].lastChild.remove();
+}
+
+    
 // 4.
-    console.log();
+    let erreur = document.querySelector('#erreur');
+    erreur.remove();
+    
 // 5.
+    const footer = document.createElement('footer');
+    let p = document.createElement('p');
+    p.innerText = '© Copyright 2023 - Chaibouu';
+    body.appendChild(footer);
+    footer.appendChild(p);
 
