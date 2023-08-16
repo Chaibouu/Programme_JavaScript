@@ -12,5 +12,10 @@
     }
 
 // 3
+    let blue = document.querySelectorAll('.blue');
+     for (let k = 0; k < blue.length; k++) {
+        blue[k].style.backgroundColor = '#6495ED';
+        blue[k].style.margin='0px';
+     }
 
 // 4
