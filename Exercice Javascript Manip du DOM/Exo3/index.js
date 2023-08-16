@@ -7,7 +7,10 @@ let definition = document.querySelectorAll('.definition');
 let paroles = document.querySelector('#paroles');
 let bar = document.querySelector('hr');
 let labell = document.querySelectorAll('label');
-console.log(refrains[1]);
+let paragraphes = document.querySelectorAll('p');
+for (let i = 0; i < paragraphes.length; i++) {
+  paragraphes[i].style.margin= "0px";
+}
 // Récupère le div contenant les paroles
 const divParoles = null; //
 
@@ -37,11 +40,18 @@ checkboxRefrains.addEventListener('click', function (event) {
     contenu[i].classList.add('hidden');
     definition[i].classList.remove('hidden');
     labell[0].lastChild.textContent = 'Afficher les refrains';
+    refrains[i].style.backgroundColor='red';
+    refrains[i].addEventListener("mouseenter", (e) => {
+      contenu[i].classList.remove('hidden');
+    });
   } else {
     // la case vient d'être decochée
     contenu[i].classList.remove('hidden');
     definition[i].classList.add('hidden');
     labell[0].lastChild.textContent = 'Masquer les refrains';
+    refrains[i].addEventListener("mouseleave", (e) => {
+      contenu[i].classList.add('hidden');
+    });
   }
   
  }
