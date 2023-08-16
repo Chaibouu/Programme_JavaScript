@@ -6,7 +6,10 @@
     }
 
 // 2
-
+    let refrain = document.querySelectorAll('.refrain');
+    for (let j = 0; j < refrain.length; j++) {
+        refrain[j].style.fontStyle = 'italic';        
+    }
 
 // 3
 
