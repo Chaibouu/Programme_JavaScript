@@ -10,9 +10,21 @@
 // chanteur : string
 // contenu: tableau contenant les lignes du couplet
 
-// 1.
-
+// 1.<h1><small>auteur -</small> Titre de la chanson</h1>
+    const body = document.body;    
+    let titre = document.createElement('h1');
+    let auteur = document.createElement('small');
+    auteur.textContent = chanson.auteur + ' - ';
+    titre.textContent = chanson.titre ;
+    titre.prepend(auteur)
+    body.prepend(titre);
 // 2.
+    let div = document.createElement('div');
+    div.setAttribute('class','paroles');
+    body.append(div);
+    let pp = document.createElement('p');
+    
+    console.log(pp);
 
 // 3.
 
