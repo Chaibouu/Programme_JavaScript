@@ -25,14 +25,7 @@
     
     for (let i = 0; i < chanson.paroles.length; i++) {
         let tableau1 = chanson.paroles[i];
-        let pp = document.createElement('p');
-        div.append(pp);
-        const tableau2= tableau1.contenu;
-        for(let j = 0; j< tableau2.length; j++){
-            console.log(tableau2[j])
-            pp.textcontent = tableau2[j];
-        }
-        console.log("\n")
+       
     }
    
     
