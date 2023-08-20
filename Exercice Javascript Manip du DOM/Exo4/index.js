@@ -129,12 +129,14 @@
             verset.forEach(element =>{
                 // element.classList.add('hidden')
                 element.style.display = 'none';
+                labelverset.firstChild.data = 'Afficher les paroles';
             })
         }
         else{
             verset.forEach(element =>{
                 // element.classList.add('hidden')
                 element.style.display = 'block';
+                labelverset.firstChild.data = 'Masquer les paroles';
             })
         }
     })
@@ -143,11 +145,13 @@
         if (e.target.checked) {
             choeur.forEach(element =>{
                 element.style.display = 'none';
+                labelchoeur.firstChild.data = 'Afficher les paroles';
             })
         }
         else{
             choeur.forEach(element =>{
                 element.style.display = 'block';
+                labelchoeur.firstChild.data = 'Masquer les paroles';
             })
         }
     })
