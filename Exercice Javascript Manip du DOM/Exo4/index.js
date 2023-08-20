@@ -24,8 +24,13 @@
     body.append(div);
     
     for (let i = 0; i < chanson.paroles.length; i++) {
-        let tableau1 = chanson.paroles[i];
-       
+        const tab1 = chanson.paroles[i];
+        const paragraphe = document.createElement('p');
+        for (let j = 0; j < tab1.contenu.length; j++) {
+            paragraphe.appendChild(document.createTextNode(tab1.contenu[j]));
+            
+            
+        }
     }
    
     
