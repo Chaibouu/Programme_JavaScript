@@ -149,6 +149,7 @@
             })
         }
     })
+    //masquer les pont
     inputpont.addEventListener('input',(e)=>{
         if (e.target.checked) {
             pont.forEach(element =>{
