@@ -45,7 +45,7 @@
                 paragraphe.setAttribute('class','outro')
             }
         }
-        div.append(paragraph
+        div.append(paragraphe)
     }
    
     
@@ -161,6 +161,7 @@
             })
         }
     })
+    //masquer les outros
     inputoutro.addEventListener('input',(e)=>{
         if (e.target.checked) {
             outro.forEach(element =>{
