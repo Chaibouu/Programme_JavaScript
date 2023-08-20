@@ -45,7 +45,7 @@
                 paragraphe.setAttribute('class','outro')
             }
         }
-        div.append(paragraphe)
+        div.append(paragraph
     }
    
     
