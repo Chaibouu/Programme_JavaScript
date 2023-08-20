@@ -137,6 +137,7 @@
             })
         }
     })
+    //masquer les choeur
     inputchoeur.addEventListener('input',(e)=>{
         if (e.target.checked) {
             choeur.forEach(element =>{
