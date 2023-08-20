@@ -129,14 +129,14 @@
             verset.forEach(element =>{
                 // element.classList.add('hidden')
                 element.style.display = 'none';
-                labelverset.firstChild.data = 'Afficher les paroles';
+                labelverset.firstChild.data = 'Afficher les versets';
             })
         }
         else{
             verset.forEach(element =>{
                 // element.classList.add('hidden')
                 element.style.display = 'block';
-                labelverset.firstChild.data = 'Masquer les paroles';
+                labelverset.firstChild.data = 'Masquer les versets';
             })
         }
     })
@@ -145,13 +145,13 @@
         if (e.target.checked) {
             choeur.forEach(element =>{
                 element.style.display = 'none';
-                labelchoeur.firstChild.data = 'Afficher les paroles';
+                labelchoeur.firstChild.data = 'Afficher les choeur';
             })
         }
         else{
             choeur.forEach(element =>{
                 element.style.display = 'block';
-                labelchoeur.firstChild.data = 'Masquer les paroles';
+                labelchoeur.firstChild.data = 'Masquer les choeur';
             })
         }
     })
@@ -160,11 +160,13 @@
         if (e.target.checked) {
             pont.forEach(element =>{
                 element.style.display = 'none';
+                labelpont.firstChild.data = 'Afficher les ponts';
             })
         }
         else{
             pont.forEach(element =>{
                 element.style.display = 'block';
+                labelpont.firstChild.data = 'Masquer les ponts';
             })
         }
     })
@@ -173,11 +175,13 @@
         if (e.target.checked) {
             outro.forEach(element =>{
                 element.style.display = 'none';
+                labeloutro.firstChild.data = 'Afficher les outros';
             })
         }
         else{
             outro.forEach(element =>{
                 element.style.display = 'block';
+                labeloutro.firstChild.data = 'Masquer les outros';
             })
         }
     })
