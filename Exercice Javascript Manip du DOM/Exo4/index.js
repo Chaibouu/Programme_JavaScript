@@ -104,7 +104,7 @@
     labelverset.style.marginRight='20px';
     labelchoeur.style.marginRight='20px';
     labelpont.style.marginRight='20px';
-
+    //masquer les paroles
     inputparoles.addEventListener('input',(e)=>{
         if(e.target.checked){
             div.style.display='none'
