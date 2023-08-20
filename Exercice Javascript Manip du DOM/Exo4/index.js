@@ -115,6 +115,7 @@
             labelparoles.firstChild.data = 'Masquer les paroles';
         }
     })
+    //masquer les versets
     inputverset.addEventListener('input',(e)=>{
         // for (let i = 0; i < verset.length; i++) {
         //     console.log(verset[i]);
