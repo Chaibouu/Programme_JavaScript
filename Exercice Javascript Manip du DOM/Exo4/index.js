@@ -31,8 +31,9 @@
             if (j < tab1.contenu.length) {
                 paragraphe.appendChild(document.createElement('br'));
             }
+            paragraphe.setAttribute('class', tab1.type)
             // Une conditions pour ajouter des classes a fin de les afficher ou les masquer
-            if(tab1.type === 'verset'){
+            /* if(tab1.type === 'verset'){
                 paragraphe.setAttribute('class','verset')
             }
             else if(tab1.type === 'choeur'){
@@ -43,7 +44,7 @@
             }
             else{
                 paragraphe.setAttribute('class','outro')
-            }
+            } */
         }
         div.append(paragraphe)
     }
