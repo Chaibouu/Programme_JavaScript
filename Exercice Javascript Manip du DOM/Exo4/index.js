@@ -75,19 +75,19 @@
     let labeloutro = document.createElement('label');
     labeloutro.textContent='Masquer les outros';
     let inputparoles = document.createElement('input');
-    inputparoles.id = 'checked';
+    
     inputparoles.type = 'checkbox';
     let inputverset = document.createElement('input');
-    inputverset.id = 'checked';
+    
     inputverset.type = 'checkbox';
     let inputchoeur = document.createElement('input');
-    inputchoeur.id = 'checked';
+    
     inputchoeur.type = 'checkbox';
     let inputpont = document.createElement('input');
-    inputpont.id = 'checked';
+    
     inputpont.type = 'checkbox';
     let inputoutro = document.createElement('input');
-    inputoutro.id = 'checked';
+    
     inputoutro.type = 'checkbox';
     labelparoles.appendChild(inputparoles);
     labelverset.appendChild(inputverset);
