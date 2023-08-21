@@ -24,12 +24,16 @@
 // link: string,
 // technology: [Techo, Techno, ...]
 
-// 1.
+// 1.                               
+    let fullname = document.querySelector('#fullName');
+    fullname.textContent = datas.fullname;
 
-// 2.
-
+// 2.   
+    let profil = document.querySelector('#profil');
+    profil.textContent = datas.profil;
 // 3.
-
+    let description = document.querySelector('#description');
+    description.textContent = datas.description;
 // 4.
 
 // 5.
