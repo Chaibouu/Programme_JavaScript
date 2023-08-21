@@ -33,7 +33,7 @@
     profil.textContent = datas.profil;
 // 3.
     let description = document.querySelector('#description');
-    description.textContent = datas.descripti;
+    description.textContent = datas.description;
 // 4.
 
 // 5.
