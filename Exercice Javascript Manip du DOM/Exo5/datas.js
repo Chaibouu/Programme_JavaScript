@@ -25,11 +25,11 @@ const datas = {
       url: "https://twitter.com",
       link: "./icons/twitter.svg"
     },
-    {
-      name: "AngelList",
-      url: "https://angellist.com",
-      link: "./icons/angellist.svg"
-    }
+    // {
+    //   name: "AngelList",
+    //   url: "https://angellist.com",
+    //   link: "./icons/angellist.svg"
+    // }
   ],
   works: [
     {

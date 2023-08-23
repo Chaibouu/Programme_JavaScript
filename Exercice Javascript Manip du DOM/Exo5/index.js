@@ -35,10 +35,24 @@
     let description = document.querySelector('#description');
     description.textContent = datas.description;
 // 4.
+    let picture = document.querySelector('#picture');
+    picture.src = datas.picture;
 
 // 5.
+    let socials = document.querySelectorAll('.socials');
+    socials.forEach(Element=>{
+        let fils = Element.children;
+        for (let i = 0; i < datas.socials.length; i++) {
+            let data = datas.socials[i];
+            fils[i].innerHTML = `<a href="${data.url}"><img src="${data.link}" alt="${data.name}"></a>`;
+        }
+    })
+
 
 // 6.
+    let works = document.querySelector('#works');
+    console.log(works);
+    
 
 // 7.
 
