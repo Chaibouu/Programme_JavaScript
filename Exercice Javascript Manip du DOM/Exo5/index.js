@@ -51,7 +51,6 @@
 
 // 6.
     let works = document.querySelector('#works');
-    console.log(works);
     for (let i = 0; i < datas.works.length; i++) {
         let div1 = document.createElement('div');
         div1.setAttribute('class','col-xl-4 col-lg-4 col-sm-6 col-12 my-2');
@@ -98,6 +97,21 @@
 
 // 7.
     let experiences = document.querySelector('#experiences');
+    for (let i = 0; i < datas.experiences.length; i++) {
+        let div11 = document.createElement('div');
+        div11.setAttribute('class','col-xl-4 col-lg-4 col-sm-6 col-12 my-2');
+        experiences.append(div11);
+        let div22 = document.createElement('div');
+        div22.setAttribute('class','card h-100');
+        div11.append(div22);
+        let imggg = document.createElement('img');
+        imggg.setAttribute('class','card-img-top');
+        imggg.href = datas.experiences[i].link;
+        imggg.alt = datas.experiences[i].name;
+        div22.append(imggg);
+
+        
+    }
 // 8.
 {/* <div class="col-xl-4 col-lg-4 col-sm-6 col-12 my-2">
 <div class="card h-100">
