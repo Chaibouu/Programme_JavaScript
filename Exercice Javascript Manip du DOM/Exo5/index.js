@@ -106,25 +106,31 @@
         div11.append(div22);
         let imggg = document.createElement('img');
         imggg.setAttribute('class','card-img-top');
-        imggg.href = datas.experiences[i].link;
+        imggg.src = datas.experiences[i].link;
         imggg.alt = datas.experiences[i].name;
         div22.append(imggg);
+        let div33 = document.createElement('div');
+        div33.setAttribute('class','card-body w-100 px-0');
+        div22.append(div33);
+        let h222 = document.createElement('h2');
+        h222.setAttribute('class','card-title mt-0 mb-4 text-center');
+        h222.textContent = datas.experiences[i].name;
+        div33.append(h222);
+        let ulll = document.createElement('ul');
+        ulll.setAttribute('class','list-unstyled w-100 d-flex justify-content-center flex-wrap');
+        div33.append(ulll);
+        let compteurr = datas.experiences[i];
+        for (let j = 0; j < compteurr.technology.length; j++) {
+            let liii = document.createElement('li');
+            ulll.append(liii);
+            let spannn = document.createElement('span');
+            spannn.setAttribute('class','card-link');
+            spannn.textContent = compteurr.technology[j];
+            liii.append(spannn);
+        }
 
         
     }
 // 8.
-{/* <div class="col-xl-4 col-lg-4 col-sm-6 col-12 my-2">
-<div class="card h-100">
-  <img class="card-img-top" src="datasExperiencessUrl" alt="datasExperiencessName">
-  <div class="card-body w-100 px-0">
-    <h2 class="card-title mt-0 mb-4 text-center">datasExperiencessName</h2>
-    <ul class="list-unstyled w-100 d-flex justify-content-center flex-wrap">
-      <!-- 
-        <li>
-          <span class="card-link">datasExperiencesTechnology</span>
-        </li>
-      -->
-    </ul>
-  </div>
-</div>
-</div> */}
+    let mail = document.querySelector('#mail');
+    mail.textContent = datas.email;
