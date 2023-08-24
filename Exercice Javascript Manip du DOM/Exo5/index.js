@@ -97,7 +97,7 @@
     }
 
 // 7.
-    let experiences = document.querySelector('#experiences')
+    let experiences = document.querySelector('#experiences');
 // 8.
 {/* <div class="col-xl-4 col-lg-4 col-sm-6 col-12 my-2">
 <div class="card h-100">
