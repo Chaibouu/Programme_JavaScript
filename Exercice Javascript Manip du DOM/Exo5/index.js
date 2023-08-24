@@ -41,6 +41,8 @@
 // 5.
     let socials = document.querySelectorAll('.socials');
     socials.forEach(Element=>{
+        let socialsLi = document.createElement('li');
+        Element.append(socialsLi); 
         let fils = Element.children;
         for (let i = 0; i < datas.socials.length; i++) {
             let data = datas.socials[i];
