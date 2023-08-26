@@ -51,6 +51,7 @@
         toi
         lui
         nous
+        vous
     }
    
     
