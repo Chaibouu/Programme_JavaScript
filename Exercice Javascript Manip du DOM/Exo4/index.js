@@ -47,11 +47,6 @@
             } */
         }
         div.append(paragraphe)
-        moi
-        toi
-        lui
-        nous
-        vous
     }
    
     
