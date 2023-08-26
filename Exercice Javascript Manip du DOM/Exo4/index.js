@@ -50,6 +50,7 @@
         moi
         toi
         lui
+        nous
     }
    
     
