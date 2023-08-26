@@ -49,6 +49,7 @@
         div.append(paragraphe)
         moi
         toi
+        lui
     }
    
     
